@@ -64,6 +64,8 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            padding: 20px;
         }
 
         .tool-card:hover {
@@ -72,35 +74,47 @@
         }
 
         .tool-card img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
         }
 
         .tool-card h3 {
-            margin: 15px;
+            margin: 0 0 10px;
             font-size: 1.5rem;
             color: #4CAF50;
         }
 
         .tool-card p {
-            margin: 0 15px 15px;
+            margin: 0 0 15px;
             font-size: 1rem;
             color: #666;
         }
 
-        .tool-card a {
-            display: block;
+        .tool-card .tool-button {
+            display: inline-block;
             background-color: #4CAF50;
             color: white;
-            text-align: center;
-            padding: 10px;
-            font-size: 1.1rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
             transition: background-color 0.3s ease;
         }
 
-        .tool-card a:hover {
+        .tool-card .tool-button:hover {
             background-color: #45a049;
+        }
+
+        /* Ad Icon */
+        .ad-icon {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            margin-left: 10px;
+            font-weight: bold;
         }
 
         /* Footer */
@@ -124,6 +138,28 @@
 
             .tools-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .tool-card {
+                padding: 15px;
+            }
+
+            .tool-card img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .tool-card h3 {
+                font-size: 1.3rem;
+            }
+
+            .tool-card p {
+                font-size: 0.9rem;
+            }
+
+            .tool-card .tool-button {
+                font-size: 0.9rem;
+                padding: 8px 16px;
             }
         }
     </style>
@@ -151,41 +187,39 @@
         <!-- Tools Grid -->
         <div class="tools-grid">
             <!-- Image Compression Tool -->
-           <a href="/Tools/img-compress.html">
+            <a href="/image-compression" class="tool-card-link">
     <div class="tool-card">
-        <img src="https://via.placeholder.com/300x150" alt="Image Compression Tool">
+        <img src="https://via.placeholder.com/80" alt="Image Compression Tool">
         <h3>Image Compression</h3>
         <p>Compress your images to reduce file size without losing quality.</p>
-        <span class="tool-link">Use Tool</span>
+        <span class="tool-button">Use Tool <span class="ad-icon">Ad</span></span>
     </div>
 </a>
 
 
             <!-- PDF to Word Converter -->
             <div class="tool-card">
-                <img src="https://via.placeholder.com/300x150" alt="PDF to Word Converter">
+                <img src="C:\Users\sss\OneDrive\Desktop\Indradip Work\Tool" alt="PDF to Word Converter">
                 <h3>PDF to Word</h3>
                 <p>Convert PDF files to editable Word documents easily.</p>
-                <a href="/pdf-to-word">Use Tool</a>
+                <a href="/pdf-to-word" class="tool-button">Use Tool <span class="ad-icon">Ad</span></a>
             </div>
 
             <!-- Image Resizer -->
             <div class="tool-card">
-                <img src="https://via.placeholder.com/300x150" alt="Image Resizer">
+                <img src="https://via.placeholder.com/80" alt="Image Resizer">
                 <h3>Image Resizer</h3>
                 <p>Resize your images to any dimensions quickly and easily.</p>
-                <a href="/image-resizer">Use Tool</a>
+                <a href="/image-resizer" class="tool-button">Use Tool <span class="ad-icon">Ad</span></a>
             </div>
 
             <!-- PDF Merger -->
             <div class="tool-card">
-                <img src="https://via.placeholder.com/300x150" alt="PDF Merger">
+                <img src="https://via.placeholder.com/80" alt="PDF Merger">
                 <h3>PDF Merger</h3>
                 <p>Merge multiple PDF files into a single document.</p>
-                <a href="/pdf-merger">Use Tool</a>
+                <a href="/pdf-merger" class="tool-button">Use Tool <span class="ad-icon">Ad</span></a>
             </div>
-
-            <!-- Add more tools here -->
         </div>
 
         <!-- AdSense Bottom Ad -->
